@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="calculator">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Hazem Azzam Haddad">
+    <link rel="stylesheet" href="./pencil.css">
+    
+    <title>calculator</title>
+</head>
+
+<body>
+    <div class="warpper">
+
+        <table>
+            <tr>
+                <td colspan="4" style="height: 70px; border: 1px solid gray; color: black;" >
+                    <output id="output" style="color: black;"></output>
+                </td>
+            </tr>
+            <tr>
+                <td><button class="gray" value="+"  onclick="print(this.value)">+</button></td>
+                <td><button class="gray" value="-"  onclick="print(this.value)">-</button></td>
+                <td><button class="gray" value="/"  onclick="print(this.value)">/</button></td>
+                <td><button class="gray" value="*"  onclick="print(this.value)">*</button></td>
+            </tr>
+            <tr>
+                <td><button value="7"  onclick="print(this.value)">7</button></td>
+                <td><button  value="8"  onclick="print(this.value)">8</button></td>
+                <td><button  value="9"  onclick="print(this.value)">9</button></td>
+                <td rowspan="4" ><button  onclick=" e()"style="background-color: rgb(106, 201, 218);">=</button></td>
+
+            </tr>
+            <tr>
+                <td><button value="4"  onclick="print(this.value)">4</button></td>
+                <td><button value="5"  onclick="print(this.value)">5</button></td>
+                <td><button value="6"  onclick="print(this.value)">6</button></td>
+
+            </tr>
+            <tr>
+                <td><button value="1"  onclick="print(this.value)">1</button></td>
+                <td><button value="2"  onclick="print(this.value)">2</button></td>
+                <td><button value="3"  onclick="print(this.value)">3</button></td>
+
+            </tr>
+            <tr>
+                <td><button value="0"  onclick="print(this.value)">0</button></td>
+                <td><button value="."  onclick="print(this.value)">.</button></td>
+                <td><button onclick="clear()">c</button></td>
+
+            </tr>
+        </table>
+    </div>
+    <script src="./pen.js"></script>
+</body>
+
+</html>

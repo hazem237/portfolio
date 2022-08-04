@@ -1,0 +1,801 @@
+/:root {}
+
+/::before,
+::after,
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    padding: 0%;
+    margin: 0%;
+    height: 100%;
+    font-size: 10px;
+    background-color: rgb(251, 253, 255);
+    scroll-behavior: smooth;
+
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+    align-self: flex-start;
+    position: fixed;
+}
+
+.mune {
+    width: 400px;
+    height: 100%;
+    margin-left: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.mune a {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: large;
+    font-family: EB Garamond;
+}
+
+.mune ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+
+
+}
+
+.mune ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+
+}
+
+.mune ul li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: black;
+    display: block;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transition: width 0.3s;
+
+}
+
+.mune ul li a:hover::after {
+    width: 50%;
+    background-color: rgb(0, 86, 126);
+}
+
+a:visited {
+    color: black;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    /* background-image: url(./imgs/background1.png); */
+}
+
+.hazem_img {
+    margin-top: 50px;
+    margin-right: 40px;
+    order: 2;
+    z-index: 1;
+
+}
+
+
+.hazem_img2 {
+    width: 740px;
+    height: 800px;
+    position: absolute;
+    left: 630px;
+    bottom: -135px;
+    z-index: 0;
+
+}
+
+
+.intro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+
+
+.words {
+    width: 80%;
+    height: 100px;
+    font-family: Roboto Mono;
+    font-size: 18px;
+    position: absolute;
+    top: 47%;
+    color: black;
+    left: 20%;
+
+}
+
+.words2 {
+    width: 90%;
+    height: 200px;
+    font-family: Roboto;
+    font-size: 65px;
+    color: black;
+    background: -webkit-linear-gradient(120deg, rgb(77, 154, 255), rgb(0, 13, 131), rgb(200, 249, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    font-family: Bebas Neue;
+
+}
+
+.contener {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    align-self: flex-start;
+}
+
+
+.type {
+    display: block;
+}
+
+.cake {
+    width: 400px;
+    height: 70px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 70%;
+    /* background-color: blue; */
+}
+
+.cake a {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    position: relative;
+    border-radius: 1px solid black;
+    background-color: rgb(226, 226, 226);
+    border-radius: 4px;
+}
+
+.cake ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+
+}
+
+.cake ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 20px 10px;
+
+}
+
+.cake ul li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: black;
+    display: block;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transition: width 0.3s;
+
+}
+
+.cake ul li a:hover::after {
+    width: 50%;
+    background-color: rgb(2, 143, 143);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+/* About section*/
+#about {
+    height: 100%;
+}
+
+#about .main {
+    width: 100%;
+    height: 2000px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+}
+
+#about .main .aboutMe {
+    width: 100%;
+    height: 200%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: #009ca1;
+    background-image: linear-gradient(113deg, #b2daf5 0%, #005b6b 100%);
+
+
+}
+
+#about .main .services {
+    width: 100%;
+    height: 300%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+
+#about .img2 {
+    width: 50%;
+    height: 100%;
+    /* background-image: linear-gradient(120deg,rgb(126, 145, 255), rgb(17, 207, 255) ,rgb(81, 81, 255) ,white); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+#about .img2 img {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+#about .paragraph {
+    width: 40%;
+    height: 70%;
+    /* background-color: blueviolet; */
+    display: flex;
+
+}
+
+#about .paragraph {
+    width: 40%;
+    height: 70%;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+
+}
+
+#about .paragraph h1 {
+    font-size: 80px;
+    font-family: Bebas Neue;
+    background: -webkit-linear-gradient(120deg, rgb(126, 145, 255), rgb(82, 220, 255), rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+#about .paragraph p {
+    font-size: 30px;
+    font-family: EB Garamond;
+    color: rgb(255, 255, 255);
+    
+
+}
+
+#about .circle {
+    position: absolute;
+    z-index: -1;
+}
+
+#about .our-ser {
+    width: 80%;
+    height: 40%;
+    position: absolute;
+    top: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+#about .our-ser h2:first-child {
+    font-size: 50px;
+    font-family: Bebas Neue;
+    background: -webkit-linear-gradient(120deg, rgb(126, 145, 255), rgb(17, 207, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
+
+#about .three {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#about .three div {
+    width: 40%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: #009ca11a;
+    
+    position: relative;
+    box-shadow: 0px 0px 44px -19px rgb(0, 0, 0);
+    margin-left: 20px;
+   
+}
+
+#about .three div::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    box-sizing: border-box;
+    height: 0;
+    border-bottom: 3px solid transparent;
+    border-left: 3px solid transparent;
+    transition: all .8s ease;
+}
+
+#about .three div::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    box-sizing: border-box;
+    height: 0;
+    border-top: 3px solid transparent;
+    border-right: 3px solid transparent;
+    transition: all .8s ease;
+}
+
+#about .three div:hover::after {
+    border-color: rgb(4, 142, 177);
+    width: 100%;
+    height: 100%;
+}
+
+#about .three div:hover::before {
+    border-color: rgb(4, 142, 177);
+    width: 100%;
+    height: 100%;
+}
+
+#about .three div img {
+    width: 90px;
+    height: 90px;
+}
+
+#about .three div h2 {
+    font-size: 40px;
+    font-family: Bebas Neue;
+}
+
+#about .three div p {
+    font-size: 16px;
+    font-family: Roboto;
+}
+
+#about .services .skill {
+
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    margin-top: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #b3c7d61e;
+    box-shadow: 0px 0px 19px -5px;
+    
+
+
+}
+
+#about .services .skill div {
+
+    width: 20%;
+    height: 250px;
+    border-right: 2px solid rgb(46, 102, 151);
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: rgb(248, 255, 254);
+    transition: transform .2s;
+    
+
+}
+
+#about .services .skill div:hover {
+
+    background-color: rgb(67, 97, 122);
+    color: white;
+    transform: scale(1.2);
+    
+
+}
+
+#about .services .skill div h2 {
+
+    font-size: 30px;
+    font-family: Bebas Neue;
+    align-self: center;
+    background: -webkit-linear-gradient(120deg, rgb(126, 145, 255), rgb(17, 207, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#about .services .skill div ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+#about .services .skill div ul li {
+    font-size: 25px;
+    font-family: EB Garamond;
+
+}
+
+#about .services .skill div ul li span {
+    color: red;
+    font-weight: bold;
+    background: -webkit-linear-gradient(120deg, rgb(4, 17, 94), rgb(17, 207, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+#about .main .services footer {
+    width: 100%;
+    height: 150px;
+    background-color: rgb(7, 166, 172);
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#about .main .services img {
+    width: 150px;
+    height: 150px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+/* work section*/
+
+
+#work .contener {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 2700px;
+}
+
+#work .contener ul {
+    width: 90%;
+    height: 700px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    align-items: center;
+
+}
+
+#work .contener ul li {
+    width: 30%;
+    height: 50%;
+    background-color: rgb(82, 82, 16);
+    list-style: none;
+    display: flex;
+    position: relative;
+}
+
+#work .contener ul a {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(2, 2, 2, 0.3);
+    position: absolute;
+    top: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+  
+
+}
+
+#work .contener ul a:hover {
+
+    opacity: 1;
+   
+
+}
+
+#work .contener ul a:link {
+    text-decoration: none;
+
+}
+
+#work .contener ul a h2 {
+    font-size: 20px;
+    font-family: Roboto;
+
+}
+
+#work .contener ul li img {
+    max-width: 100%;
+    object-fit: cover;
+    box-shadow: 0px 0px 44px -15px rgb(0, 0, 0);
+}
+
+#work .contener ul li span {
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    top: -130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#work .contener ul li span h2 {
+    font-size: 40px;
+    font-family: Bebas Neue;
+    background: -webkit-linear-gradient(120deg, rgb(117, 213, 216), rgb(2, 125, 156));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Contact*/
+#contact .contener {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 3500px;
+}
+
+#contact .contener .contact {
+    width: 70%;
+    height: 600px;
+    border-radius: 7px;
+    display: flex;
+    border: 1px dotted black;
+}
+
+#contact .contener .contact .gmail {
+    width: 50%;
+    height: 100%;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#contact .contener .contact .gmail h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-family: Bebas Neue;
+    position: absolute;
+    top: 0;
+
+}
+
+#contact .contener .contact .gmail form {
+
+    width: 90%;
+    height: 90%;
+    padding: 20px;
+    margin-top: 15%;
+}
+
+#contact .contener .contact .gmail form label {
+    display: block;
+    font-size: 20px;
+    margin-top: 16px;
+    font-family: Bebas Neue;
+}
+
+#contact .contener .contact .gmail form input {
+    width: 90%;
+    height: 20px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    margin-top: 3px;
+    border: 1px solid gray;
+}
+
+#contact .contener .contact .gmail form input:hover {
+    box-shadow: 0px 0px 10px 2px rgb(187, 243, 253);
+}
+
+#contact .contener .contact .social {
+    width: 50%;
+    height: 100%;
+    border-radius: 7px;
+    position: relative;
+
+
+
+}
+
+#contact .contener .contact .social ul {
+    width: 70%;
+    height: 250px;
+    border-radius: 7px;
+
+    margin-left: 50px;
+    position: relative;
+}
+
+#contact .contener .contact .social ul li {
+    width: 60px;
+    height: 60px;
+    border-radius: 7px;
+
+    list-style: none;
+    margin-left: 37%;
+    margin-top: 20px;
+    display: flex;
+}
+
+/* #contact .contener .contact .social ul li a{
+   width: 100%;
+   height: 100%;
+   background-color: rgb(0, 255, 34);
+} */
+
+#contact .contener .contact .social h2 {
+    margin-top: 15%;
+    margin-left: 180px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-family: Bebas Neue;
+
+    height: 60px;
+}
+
+#contact .contener .contact .gmail form .message {
+    width: 90%;
+    height: 90px;
+    padding: 10px;
+}
+
+#contact .contener .contact .gmail form button {
+    display: block;
+    width: 120px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 150px;
+    font-size: 15px;
+    border-radius: 15px;
+    background-color: gray;
+    color: white;
+    border: none;
+}
+
+#contact .contener .contact .gmail form button:hover {
+    background-color: rgb(172, 172, 172);
+    color: rgb(136, 136, 136);
+    box-shadow: 0px 0px 4px 4px rgb(255, 163, 163);
+
+}
+
+footer {
+    width: 100%;
+    height: 150px;
+    background-color: rgb(7, 166, 172);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 4270px;
+}
+
+.fa {
+    width: 80%;
+    height: 40%;
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 9px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    box-shadow: 0px 0px 10px 5px rgb(159, 159, 255);
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-pinterest {
+    background: #cb2027;
+    color: white;
+}
+
+em
+{
+    font-size: small;
+}
