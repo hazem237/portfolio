@@ -1,236 +1,178 @@
-/:root {}
+/* :root {
+} */
 
-/::before,
+::before,
 ::after,
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body,
 html {
-    padding: 0%;
-    margin: 0%;
-    height: 100%;
-    font-size: 10px;
-    background-color: rgb(251, 253, 255);
-    scroll-behavior: smooth;
-
+	padding: 0%;
+	margin: 0%;
+	height: 100%;
+	font-size: 10px;
+	background-color: rgb(251, 253, 255);
+	scroll-behavior: smooth;
+	font-family: Roboto;
 }
 
-.logo {
-    width: 200px;
-    height: 100px;
-    align-self: flex-start;
-    position: fixed;
-}
-
-.mune {
-    width: 400px;
-    height: 100%;
-    margin-left: 50%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-.mune a {
-    width: 100px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    font-size: large;
-    font-family: EB Garamond;
-}
-
-.mune ul {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 100%;
-    flex: 1;
-
-
-}
-
-.mune ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 10px 30px;
-
-}
-
-.mune ul li a::after {
-    content: "";
-    width: 0;
-    height: 3px;
-    background-color: black;
-    display: block;
-    transform: translateX(-50%);
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transition: width 0.3s;
-
-}
-
-.mune ul li a:hover::after {
-    width: 50%;
-    background-color: rgb(0, 86, 126);
-}
-
-a:visited {
-    color: black;
-}
-
-.img {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    /* background-image: url(./imgs/background1.png); */
-}
-
-.hazem_img {
-    margin-top: 50px;
-    margin-right: 40px;
-    order: 2;
-    z-index: 1;
-
-}
-
-
-.hazem_img2 {
-    width: 740px;
-    height: 800px;
-    position: absolute;
-    left: 630px;
-    bottom: -135px;
-    z-index: 0;
-
-}
-
-
-.intro {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-}
-
-
-
-.words {
-    width: 80%;
-    height: 100px;
-    font-family: Roboto Mono;
-    font-size: 18px;
-    position: absolute;
-    top: 47%;
-    color: black;
-    left: 20%;
-
-}
-
-.words2 {
-    width: 90%;
-    height: 200px;
-    font-family: Roboto;
-    font-size: 65px;
-    color: black;
-    background: -webkit-linear-gradient(120deg, rgb(77, 154, 255), rgb(0, 13, 131), rgb(200, 249, 255));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
-    position: absolute;
-    top: 30%;
-    font-family: Bebas Neue;
-
-}
-
-.contener {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    align-self: flex-start;
-}
-
-
-.type {
-    display: block;
-}
-
-.cake {
-    width: 400px;
-    height: 70px;
-    margin-bottom: 120px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    position: absolute;
-    top: 70%;
-    /* background-color: blue; */
-}
-
-.cake a {
-    width: 200px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: medium;
-    position: relative;
-    border-radius: 1px solid black;
-    background-color: rgb(226, 226, 226);
-    border-radius: 4px;
-}
-
-.cake ul {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 100%;
-    flex: 1;
-
-}
-
-.cake ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 20px 10px;
-
-}
-
-.cake ul li a::after {
-    content: "";
-    width: 0;
-    height: 3px;
-    background-color: black;
-    display: block;
-    transform: translateX(-50%);
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transition: width 0.3s;
-
-}
-
-.cake ul li a:hover::after {
-    width: 50%;
-    background-color: rgb(2, 143, 143);
+section {
+	width: 100%;
+	height: 100%;
+	position: relative;
 }
 
 a:link {
-    text-decoration: none;
+	text-decoration: none;
+}
+
+/* ===================================== */
+.page-header {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	z-index: 1000;
+	right: 0;
+	left: 0;
+	box-shadow: 1px 15px 15px -4px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 1px 15px 15px -4px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 1px 15px 15px -4px rgba(0, 0, 0, 0.3);
+	background-color: white;
+	padding: 20px;
+}
+
+.page-logo {
+	width: 50px;
+	height: 50px;
+}
+
+.page-menu {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	height: 100%;
+	flex: 1;
+	list-style: none;
+	display: flex;
+}
+
+.page-menu-item {
+	width: 100px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	font-size: large;
+}
+
+.page-menu-item::after {
+	content: "";
+	width: 0;
+	height: 3px;
+	background-color: black;
+	display: block;
+	transform: translateX(-50%);
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transition: width 0.3s;
+}
+
+.page-menu-item:hover::after {
+	width: 50%;
+	background-color: rgb(0, 86, 126);
+}
+
+.page-menu-item,
+.page-menu-item:visited {
+	color: #272643;
+}
+
+/* INTRO SECTION */
+#intro {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 90px;
+}
+
+.intro-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.intro-title {
+	font-size: 65px;
+	color: black;
+	background: -webkit-linear-gradient(
+		120deg,
+		rgb(77, 154, 255),
+		rgb(0, 13, 131),
+		rgb(200, 249, 255)
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin-bottom: 0px;
+}
+
+.intro-subtitle {
+	font-size: 18px;
+	color: #272643;
+	text-align: center;
+}
+
+.intro-cv-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: medium;
+	position: relative;
+	border-radius: 5px;
+	background-color: #bae8e8;
+	border-radius: 5px;
+	padding: 1em 2em;
+	margin-top: 10px;
+	align-self: center;
+	color: #272643;
+	font-weight: bold;
+	transition: all 0.5s;
+}
+
+.intro-cv-button:hover {
+	background-color: #cbf9f9;
+}
+
+.personal-image-container {
+	position: relative;
+}
+
+.personal-image {
+	height: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+.personal-image-backdrop {
+	position: absolute;
+	top: 50%;
+	bottom: 50%;
+	left: 50%;
+	right: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	width: 85%;
+	height: 85%;
+	z-index: 0;
+	background: rgb(255,255,255);
+    background: linear-gradient(120deg, rgba(255,255,255,1) 4%, rgba(227,246,245,1) 22%, rgba(44,105,141,1) 77%);
 }
 
 /* About section*/
-#about {
-    height: 100%;
-}
+
 
 #about .main {
     width: 100%;
@@ -303,8 +245,7 @@ a:link {
 
 #about .paragraph h1 {
     font-size: 80px;
-    font-family: Bebas Neue;
-    background: -webkit-linear-gradient(120deg, rgb(126, 145, 255), rgb(82, 220, 255), rgb(255, 255, 255));
+    font-family:     : Bebas Neue;;    background: -webkit-linear-gradient(120deg, rgb(126, 145, 255), rgb(82, 220, 255), rgb(255, 255, 255));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -312,8 +253,7 @@ a:link {
 
 #about .paragraph p {
     font-size: 30px;
-    font-family: EB Garamond;
-    color: rgb(255, 255, 255);
+    font-family:     : EB Garamond;;    color: rgb(255, 255, 255);
     
 
 }
@@ -337,8 +277,7 @@ a:link {
 
 #about .our-ser h2:first-child {
     font-size: 50px;
-    font-family: Bebas Neue;
-    background: -webkit-linear-gradient(120deg, rgb(126, 145, 255), rgb(17, 207, 255));
+    font-family:     : Bebas Neue;;    background: -webkit-linear-gradient(120deg, rgb(126, 145, 255), rgb(17, 207, 255));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -412,13 +351,11 @@ a:link {
 
 #about .three div h2 {
     font-size: 40px;
-    font-family: Bebas Neue;
-}
+    font-family:     : Bebas Neue;;}
 
 #about .three div p {
     font-size: 16px;
-    font-family: Roboto;
-}
+    font-family:     : Roboto;;}
 
 #about .services .skill {
 
@@ -462,8 +399,7 @@ a:link {
 #about .services .skill div h2 {
 
     font-size: 30px;
-    font-family: Bebas Neue;
-    align-self: center;
+    font-family:     : Bebas Neue;;    align-self: center;
     background: -webkit-linear-gradient(120deg, rgb(126, 145, 255), rgb(17, 207, 255));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -478,8 +414,7 @@ a:link {
 
 #about .services .skill div ul li {
     font-size: 25px;
-    font-family: EB Garamond;
-
+    font-family:     : EB Garamond;;
 }
 
 #about .services .skill div ul li span {
@@ -571,8 +506,7 @@ a:link {
 
 #work .contener ul a h2 {
     font-size: 20px;
-    font-family: Roboto;
-
+    font-family:     : Roboto;;
 }
 
 #work .contener ul li img {
@@ -594,8 +528,7 @@ a:link {
 
 #work .contener ul li span h2 {
     font-size: 40px;
-    font-family: Bebas Neue;
-    background: -webkit-linear-gradient(120deg, rgb(117, 213, 216), rgb(2, 125, 156));
+    font-family:     : Bebas Neue;;    background: -webkit-linear-gradient(120deg, rgb(117, 213, 216), rgb(2, 125, 156));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -634,8 +567,7 @@ a:link {
     width: 100%;
     text-align: center;
     font-size: 40px;
-    font-family: Bebas Neue;
-    position: absolute;
+    font-family:     : Bebas Neue;;    position: absolute;
     top: 0;
 
 }
@@ -652,8 +584,7 @@ a:link {
     display: block;
     font-size: 20px;
     margin-top: 16px;
-    font-family: Bebas Neue;
-}
+    font-family:     : Bebas Neue;;}
 
 #contact .contener .contact .gmail form input {
     width: 90%;
@@ -710,8 +641,7 @@ a:link {
     margin-left: 180px;
     margin-bottom: 10px;
     font-size: 30px;
-    font-family: Bebas Neue;
-
+    font-family:     : Bebas Neue;;
     height: 60px;
 }
 
