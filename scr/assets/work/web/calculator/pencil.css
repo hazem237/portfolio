@@ -1,0 +1,53 @@
+.warpper
+{
+    width: 500px;
+    height: 400px;
+    background-color: white;
+    border-radius: 14px;
+    margin-top: 50px;
+    padding: 15px;
+    display: flex;
+}
+.warpper > div
+{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid rgb(206, 206, 206);
+    margin: 10px;
+}
+
+body
+{
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+}
+
+
+table
+{
+    width: 100%;
+    height:100% ;
+    padding: 5px;
+}
+td{
+    padding: 5px;
+
+    z-index: 0;
+}
+button ,input
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(238, 238, 238);
+    border: 1px solid gray;
+    z-index: -2;
+}
+.gray
+{
+    background-color: rgb(126, 126, 126);
+    color: white;
+    font-size: large;
+}
