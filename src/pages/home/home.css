@@ -867,4 +867,42 @@ em {
 		font-size: 14px;
 	}
 
+	/*<<<<<<<<<<<<<< Work section<<<<<<<<<<<<*/
+	.work-page-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		height: 200%;
+	}
+
+	.work-list-container {
+		width: 90%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.work-family {
+		width: 100%;
+		height: 30%;
+	}
+
+	.work-categories {
+		width: 90%;
+		height: 50%;
+
+	}
+
+	.work-categories-header {
+		width: 100%;
+		height: auto;
+		margin-top: 5%;
+	}
+
+	.work-categories-title {
+		font-size: 26px;
+	}
 }
