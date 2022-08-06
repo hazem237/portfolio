@@ -13,12 +13,10 @@
 .intro-title {
 	font-size: 65px;
 	color: black;
-	background: -webkit-linear-gradient(
-		120deg,
-		rgb(77, 154, 255),
-		rgb(0, 13, 131),
-		rgb(200, 249, 255)
-	);
+	background: -webkit-linear-gradient(120deg,
+			rgb(77, 154, 255),
+			rgb(0, 13, 131),
+			rgb(200, 249, 255));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	margin-bottom: 0px;
@@ -73,12 +71,10 @@
 	height: 85%;
 	z-index: 0;
 	background: rgb(255, 255, 255);
-	background: linear-gradient(
-		120deg,
-		rgba(255, 255, 255, 1) 4%,
-		rgba(227, 246, 245, 1) 22%,
-		rgba(44, 105, 141, 1) 77%
-	);
+	background: linear-gradient(120deg,
+			rgba(255, 255, 255, 1) 4%,
+			rgba(227, 246, 245, 1) 22%,
+			rgba(44, 105, 141, 1) 77%);
 }
 
 /* .......................About section............................*/
@@ -119,12 +115,10 @@
 
 .about-me-title {
 	font-size: 80px;
-	background: -webkit-linear-gradient(
-		120deg,
-		rgb(126, 145, 255),
-		rgb(82, 220, 255),
-		rgb(255, 255, 255)
-	);
+	background: -webkit-linear-gradient(120deg,
+			rgb(126, 145, 255),
+			rgb(82, 220, 255),
+			rgb(255, 255, 255));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -146,11 +140,9 @@
 
 .services-title {
 	font-size: 50px;
-	background: -webkit-linear-gradient(
-		120deg,
-		rgb(190, 200, 255),
-		rgb(0, 174, 218)
-	);
+	background: -webkit-linear-gradient(120deg,
+			rgb(190, 200, 255),
+			rgb(0, 174, 218));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -272,11 +264,9 @@
 
 .info-box-title {
 	font-size: 30px;
-	background: -webkit-linear-gradient(
-		120deg,
-		rgb(0, 16, 104),
-		rgb(17, 207, 255)
-	);
+	background: -webkit-linear-gradient(120deg,
+			rgb(0, 16, 104),
+			rgb(17, 207, 255));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -288,11 +278,9 @@
 .year-education {
 	display: block;
 	font-weight: bold;
-	background: -webkit-linear-gradient(
-		120deg,
-		rgb(4, 17, 94),
-		rgb(17, 207, 255)
-	);
+	background: -webkit-linear-gradient(120deg,
+			rgb(4, 17, 94),
+			rgb(17, 207, 255));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -342,11 +330,9 @@
 
 .work-categories-title {
 	font-size: 40px;
-	background: -webkit-linear-gradient(
-		120deg,
-		rgb(117, 213, 216),
-		rgb(2, 125, 156)
-	);
+	background: -webkit-linear-gradient(120deg,
+			rgb(117, 213, 216),
+			rgb(2, 125, 156));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -449,11 +435,9 @@
 .form-title {
 	font-size: 30px;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	background: -webkit-linear-gradient(
-		120deg,
-		rgb(117, 213, 216),
-		rgb(2, 125, 156)
-	);
+	background: -webkit-linear-gradient(120deg,
+			rgb(117, 213, 216),
+			rgb(2, 125, 156));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	width: 80%;
@@ -500,7 +484,7 @@
 	font-size: 2rem;
 	padding: 0.5em 1.5em;
 	cursor: pointer;
-	margin-top: 10px;
+	margin-top: 20px;
 }
 
 .send-message-button:hover {
