@@ -635,11 +635,7 @@ em {
 /* ....................... responsive section ............................*/
 
 @media only screen and (max-width:700px) {
-	.page-header {
-		background-color: red;
-		width: 100%;
-		height: 15px;
-	}
+
 
 	.page-logo {
 		width: 70px;
@@ -651,18 +647,9 @@ em {
 		padding: 6px;
 	}
 
-	.page-menu {
-		display: flex;
 
-		flex: 1;
-		list-style: none;
+	.page-menu {
 		display: none;
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 0;
-		bottom: 0;
-		background-color: #009ca1;
 	}
 
 	.page-menu-item {
@@ -672,31 +659,10 @@ em {
 		justify-content: center;
 		align-items: center;
 		position: relative;
-		flex-wrap: wrap;
+		font-size: 15px;
 	}
 
-	.page-menu-item::after {
-		content: "";
-		width: 0;
-		height: 3px;
-		background-color: black;
-		display: block;
-		transform: translateX(-50%);
-		position: absolute;
-		bottom: 0;
-		left: 50%;
-		transition: width 0.3s;
-	}
-
-	.page-menu-item:hover::after {
-		width: 50%;
-		background-color: rgb(0, 86, 126);
-	}
-
-	.page-menu-item,
-	.page-menu-item:visited {
-		color: #272643;
-	}
+	/*>>>>>>>>>>>> Home section <<<<<<<<<<<<<<<<*/
 
 	.intro {
 		display: block;
@@ -905,4 +871,34 @@ em {
 	.work-categories-title {
 		font-size: 26px;
 	}
+
+	/*<<<<<<<<<<<<<<<conatact section >>>>>>>>>>>>>>>>>*/
+
+	.social-img-container {
+		width: 100%;
+		height: 85%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.contact-personal-img-container {
+		display: none;
+
+	}
+
+	.contact-social-container {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.form-title {
+		font-size: 20px;
+	}
+
+
 }
