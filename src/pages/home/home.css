@@ -631,3 +631,224 @@ footer {
 em {
 	font-size: small;
 }
+
+/* ....................... responsive section ............................*/
+
+@media only screen and (max-width:700px) {
+	.page-header {
+		background-color: red;
+		width: 100%;
+		height: 15px;
+	}
+
+	.page-logo {
+		width: 150px;
+		height: 150px;
+		z-index: 111;
+		position: absolute;
+		top: 0;
+		left: 0;
+
+
+	}
+
+	.page-menu {
+		display: flex;
+
+		flex: 1;
+		list-style: none;
+		display: none;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background-color: #009ca1;
+	}
+
+	.page-menu-item {
+		width: 100px;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		flex-wrap: wrap;
+	}
+
+	.page-menu-item::after {
+		content: "";
+		width: 0;
+		height: 3px;
+		background-color: black;
+		display: block;
+		transform: translateX(-50%);
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transition: width 0.3s;
+	}
+
+	.page-menu-item:hover::after {
+		width: 50%;
+		background-color: rgb(0, 86, 126);
+	}
+
+	.page-menu-item,
+	.page-menu-item:visited {
+		color: #272643;
+	}
+
+	.intro {
+		display: block;
+		justify-content: space-between;
+		background-color: rebeccapurple;
+		width: 100%;
+		height: 100%;
+		position: relative;
+		padding: 5%;
+	}
+
+	.intro-container {
+		display: block;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.intro-title {
+		font-size: 35px;
+		color: black;
+		background: -webkit-linear-gradient(120deg,
+				rgb(77, 154, 255),
+				rgb(0, 13, 131),
+				rgb(200, 249, 255));
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		margin-bottom: 0px;
+		text-align: center;
+	}
+
+	.intro-subtitle {
+		font-size: 18px;
+		color: #272643;
+		text-align: center;
+	}
+
+	.intro-cv-button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: medium;
+		position: relative;
+		border-radius: 5px;
+		background-color: #bae8e8;
+		border-radius: 5px;
+		padding: 1em 2em;
+		margin-top: 10px;
+		align-self: center;
+		color: #272643;
+		font-weight: bold;
+		transition: all 0.5s;
+	}
+
+	.intro-cv-button:hover {
+		background-color: #cbf9f9;
+	}
+
+	.personal-image-container {
+		position: relative;
+		background-color: yellow;
+		height: 74%;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+	}
+
+	.personal-image {
+
+		position: relative;
+		z-index: 1;
+		max-width: 100%;
+		object-fit: cover;
+
+		position: absolute;
+		bottom: 0;
+
+
+	}
+
+	.personal-image-backdrop {
+		position: absolute;
+		top: 50%;
+		bottom: 50%;
+		left: 50%;
+		right: 50%;
+		transform: translate(-50%, -50%);
+		border-radius: 50%;
+		width: 316px;
+		height: 334px;
+		z-index: 0;
+		background: rgb(255, 255, 255);
+		background: linear-gradient(120deg,
+				rgba(255, 255, 255, 1) 4%,
+				rgba(227, 246, 245, 1) 22%,
+				rgba(44, 105, 141, 1) 77%);
+	}
+
+
+
+	/*>>>>>>>>>>>>>>>>>>>>>about me<<<<<<<<<<*/
+
+	.personal-information-section {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		background-color: #009ca1;
+		background-image: linear-gradient(113deg, #b2daf5 0%, #005b6b 100%);
+	}
+
+	.about-me-imgs-container {
+		width: 50%;
+		height: 100%;
+		/* background-image: linear-gradient(120deg,rgb(126, 145, 255), rgb(17, 207, 255) ,rgb(81, 81, 255) ,white); */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+
+	}
+
+	.about-me-imgs-container img {
+		width: 80%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.personal-information-container {
+		width: 40%;
+		height: 70%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 15px;
+	}
+
+	.about-me-title {
+		font-size: 40px;
+		background: -webkit-linear-gradient(120deg,
+				rgb(126, 145, 255),
+				rgb(82, 220, 255),
+				rgb(255, 255, 255));
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.personal-information-paragraph {
+		font-size: 16px;
+		color: rgb(255, 255, 255);
+	}
+}
