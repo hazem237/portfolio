@@ -80,12 +80,10 @@
 .intro-title {
 	font-size: 65px;
 	color: black;
-	background: -webkit-linear-gradient(
-		120deg,
-		rgb(77, 154, 255),
-		rgb(0, 13, 131),
-		rgb(200, 249, 255)
-	);
+	background: -webkit-linear-gradient(120deg,
+			rgb(77, 154, 255),
+			rgb(0, 13, 131),
+			rgb(200, 249, 255));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	margin-bottom: 0px;
@@ -140,12 +138,10 @@
 	height: 85%;
 	z-index: 0;
 	background: rgb(255, 255, 255);
-	background: linear-gradient(
-		120deg,
-		rgba(255, 255, 255, 1) 4%,
-		rgba(227, 246, 245, 1) 22%,
-		rgba(44, 105, 141, 1) 77%
-	);
+	background: linear-gradient(120deg,
+			rgba(255, 255, 255, 1) 4%,
+			rgba(227, 246, 245, 1) 22%,
+			rgba(44, 105, 141, 1) 77%);
 }
 
 /* .......................About section............................*/
@@ -186,12 +182,10 @@
 
 .about-me-title {
 	font-size: 80px;
-	background: -webkit-linear-gradient(
-		120deg,
-		rgb(126, 145, 255),
-		rgb(82, 220, 255),
-		rgb(255, 255, 255)
-	);
+	background: -webkit-linear-gradient(120deg,
+			rgb(126, 145, 255),
+			rgb(82, 220, 255),
+			rgb(255, 255, 255));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -213,11 +207,9 @@
 
 .services-title {
 	font-size: 50px;
-	background: -webkit-linear-gradient(
-		120deg,
-		rgb(190, 200, 255),
-		rgb(0, 174, 218)
-	);
+	background: -webkit-linear-gradient(120deg,
+			rgb(190, 200, 255),
+			rgb(0, 174, 218));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -339,11 +331,9 @@
 
 .info-box-title {
 	font-size: 30px;
-	background: -webkit-linear-gradient(
-		120deg,
-		rgb(0, 16, 104),
-		rgb(17, 207, 255)
-	);
+	background: -webkit-linear-gradient(120deg,
+			rgb(0, 16, 104),
+			rgb(17, 207, 255));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -355,11 +345,9 @@
 .year-education {
 	display: block;
 	font-weight: bold;
-	background: -webkit-linear-gradient(
-		120deg,
-		rgb(4, 17, 94),
-		rgb(17, 207, 255)
-	);
+	background: -webkit-linear-gradient(120deg,
+			rgb(4, 17, 94),
+			rgb(17, 207, 255));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -409,11 +397,9 @@
 
 .work-categories-title {
 	font-size: 40px;
-	background: -webkit-linear-gradient(
-		120deg,
-		rgb(117, 213, 216),
-		rgb(2, 125, 156)
-	);
+	background: -webkit-linear-gradient(120deg,
+			rgb(117, 213, 216),
+			rgb(2, 125, 156));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -451,177 +437,195 @@
 }
 
 /* ....................... contact section ............................*/
-#contact .contener {
+.contact-page-container {
 	width: 100%;
 	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: red;
 }
 
-#contact .contener .contact {
-	width: 70%;
-	height: 600px;
-	border-radius: 7px;
+.social-img-container {
+	width: 90%;
+	height: 85%;
+	background-color: white;
 	display: flex;
-	border: 1px dotted black;
+	justify-content: space-around;
+	align-items: center;
 }
 
-#contact .contener .contact .gmail {
-	width: 50%;
+.contact-personal-img-container {
+	width: 30%;
+	height: 65%;
+	background-color: green;
+	position: relative;
+	border-radius: 5px;
+
+}
+
+.contact-personal-img-container::after {
+	height: 10px;
+	display: block;
+	width: 100px;
+	background: #2c698d;
+	border-right: 1px white;
+	content: '';
+	margin-top: 4px;
+}
+
+.contact-personal-img-container::before {
+	height: 10px;
+	display: block;
+	width: 100px;
+	background: #2c698d;
+	border-right: 1px white;
+	content: '';
+	margin-top: 4px;
+	position: absolute;
+	right: 0;
+	top: -18px;
+}
+
+.contact-social-container {
+	width: 60%;
 	height: 100%;
-	border-radius: 7px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
-	position: relative;
 }
 
-#contact .contener .contact .gmail h1 {
-	width: 100%;
-	text-align: center;
-	font-size: 40px;
-	font-family: Bebas Neue;
-	position: absolute;
-	top: 0;
-}
-
-#contact .contener .contact .gmail form {
-	width: 90%;
-	height: 90%;
-	padding: 20px;
-	margin-top: 15%;
-}
-
-#contact .contener .contact .gmail form label {
-	display: block;
-	font-size: 20px;
-	margin-top: 16px;
-	font-family: Bebas Neue;
-}
-
-#contact .contener .contact .gmail form input {
-	width: 90%;
-	height: 20px;
+.contact-personal-img {
+	max-width: 100%;
+	object-fit: cover;
 	border-radius: 5px;
+}
+
+.form-title {
+	/* background-color: red; */
+	font-size: 30px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background: -webkit-linear-gradient(120deg,
+			rgb(117, 213, 216),
+			rgb(2, 125, 156));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	width: 80%;
+	text-align: center;
+	align-self: center;
+
+}
+
+
+.contact-form {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	/* background-color: #009ca1; */
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	/* background-color: gray; */
+}
+
+.label-input {
+	/* background-color: rgb(0, 255, 55); */
+	width: 80%;
+	height: 20%;
+	/* border: 1px solid red; */
+	align-items: center;
+
+}
+
+.contact-form label {
+	font-size: 20px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	/* background-color: #a15600; */
+	display: block;
+}
+
+.text-input {
+	margin-top: 2px;
+	width: 100%;
+	height: 40px;
+	border-radius: 6px;
+	padding: 8px;
+	border: 1px solid gray;
+
+}
+
+.send-message-button {
+
+	width: 100px;
+	height: 40px;
+	align-self: center;
+	margin-top: 40px;
+	background-color: #bae8e8;
+	border-radius: 8px;
+	transition: all 0.4s ease;
 	border: none;
-	padding: 10px;
-	margin-top: 3px;
+	font-size: large;
+
+
+}
+
+.send-message-button:hover {
+	background-color: #2c698d;
+	color: white;
+}
+
+.message {
+	height: 100%;
+	margin-top: 2px;
+	width: 100%;
+	border-radius: 6px;
+	padding: 5px;
 	border: 1px solid gray;
 }
 
-#contact .contener .contact .gmail form input:hover {
-	box-shadow: 0px 0px 10px 2px rgb(187, 243, 253);
+.message:hover {
+	box-shadow: 1px 1px 10px 2px rgb(167, 223, 236);
+
 }
 
-#contact .contener .contact .social {
-	width: 50%;
-	height: 100%;
-	border-radius: 7px;
-	position: relative;
+.text-input:hover {
+	box-shadow: 1px 1px 10px 2px rgb(167, 223, 236);
+
 }
 
-#contact .contener .contact .social ul {
-	width: 70%;
-	height: 250px;
-	border-radius: 7px;
-	margin-left: 50px;
-	position: relative;
-}
-
-#contact .contener .contact .social ul li {
-	width: 60px;
-	height: 60px;
-	border-radius: 7px;
-	list-style: none;
-	margin-left: 37%;
-	margin-top: 20px;
+.social-media-container {
+	width: 100%;
+	height: 20%;
 	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-#contact .contener .contact .social h2 {
-	margin-top: 15%;
-	margin-left: 180px;
-	margin-bottom: 10px;
-	font-size: 30px;
-	font-family: Bebas Neue;
-	height: 60px;
-}
-
-#contact .contener .contact .gmail form .message {
-	width: 90%;
-	height: 90px;
-	padding: 10px;
-}
-
-#contact .contener .contact .gmail form button {
-	display: block;
-	width: 120px;
+.social-media-link {
+	width: 40px;
 	height: 40px;
-	margin-top: 20px;
-	margin-left: 150px;
-	font-size: 15px;
-	border-radius: 15px;
-	background-color: gray;
-	color: white;
-	border: none;
+	background-color: #ffffff;
+	margin-left: 30px;
+	border-radius: 7px;
 }
 
-#contact .contener .contact .gmail form button:hover {
-	background-color: rgb(172, 172, 172);
-	color: rgb(136, 136, 136);
-	box-shadow: 0px 0px 4px 4px rgb(255, 163, 163);
+.social-media-link:hover {
+	box-shadow: 0px 0px 10px 5px #2c698d;
+}
+
+.social-media-icon {
+	max-width: 100%;
+	object-fit: cover;
+	border-radius: 7px;
 }
 
 /* ....................... footer section ............................*/
+
 footer {
 	width: 100%;
 	height: 150px;
 	background-color: rgb(7, 166, 172);
 	display: flex;
 	justify-content: center;
-}
-
-.fa {
-	width: 80%;
-	height: 40%;
-	display: flex;
-	text-align: center;
-	text-decoration: none;
-	padding: 20px;
-	border-radius: 9px;
-}
-
-.fa:hover {
-	opacity: 0.7;
-	box-shadow: 0px 0px 10px 5px rgb(159, 159, 255);
-}
-
-.fa-facebook {
-	background: #3b5998;
-	color: white;
-}
-
-.fa-twitter {
-	background: #55acee;
-	color: white;
-}
-
-.fa-linkedin {
-	background: #007bb5;
-	color: white;
-}
-
-.fa-instagram {
-	background: #125688;
-	color: white;
-}
-
-.fa-pinterest {
-	background: #cb2027;
-	color: white;
 }
 
 em {
